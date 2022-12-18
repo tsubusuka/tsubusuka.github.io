@@ -17,4 +17,5 @@ title: about
   - 調べ物したときのメモ代わり
 
 ### 問い合わせ
-  - twitterの@tsubusukaまで
+  - tsubusukaのTwitterまで
+  - https://twitter.com/tsubusuka

@@ -6,6 +6,7 @@ title: トップページ
 ## Text
 
 * [ポケモンSV楽しかった](text/pokemon.html)
+* [金沢旅行(12/9-12/11)](text/kanazawa.html)
 
 ## About
 

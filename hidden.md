@@ -42,11 +42,3 @@ normal ___bold___ normal
 
 水平線
 ***
-
-### GFMテスト
-
-
-自動リンク
-https://www.google.co.jp/
-
-

@@ -11,4 +11,4 @@ title: トップページ
 ## About
 
 * [このサイトについて](/about.html)
-* [:smile:](/hidden.html)
+* [_](/hidden.html)

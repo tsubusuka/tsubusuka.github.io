@@ -12,4 +12,6 @@ title: トップページ
 ## About
 
 * [このサイトについて](/about.html)
-* [_](/hidden.html)
+* [tsubusukaについて](/profile.html)
+
+[_](/hidden.html)

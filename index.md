@@ -11,7 +11,7 @@ title: トップページ
 
 ## Knowledge
 
-* [ギラファノコギリクワガタの名前の由来](/knowledge/ProsopocoilusGiraffa.md.html)
+* [ギラファノコギリクワガタの名前の由来](/knowledge/ProsopocoilusGiraffa.html)
 
 ## About
 

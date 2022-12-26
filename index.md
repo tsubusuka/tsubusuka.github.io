@@ -5,7 +5,7 @@ title: トップページ
 
 ## Text
 
-* [弘法大師の涙雨](text/namidaame.html)
+* [「弘法大師の涙雨」メモ](text/namidaame.html)
 * [2022年面白かったゲーム](text/bestGame2022.html)
 * [ポケモンSV楽しかった](text/pokemon.html)
 * [金沢旅行(2022/12/9-12/11)](text/kanazawa.html)

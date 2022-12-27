@@ -12,6 +12,7 @@ title: トップページ
 
 ## Knowledge
 
+* [讃岐弁講座「はがい」](/knowledge/hagai.html)
 * [ギラファノコギリクワガタの名前の由来](/knowledge/ProsopocoilusGiraffa.html)
 
 ## About

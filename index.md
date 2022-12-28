@@ -5,6 +5,7 @@ title: トップページ
 
 ## Text
 
+* [2022年ベストアルバム](text/bestMusic2022.html)
 * [個人的に怖くて嫌だった話](text/kowai.html)
 * [「弘法大師の涙雨」メモ](text/namidaame.html)
 * [2022年面白かったゲーム](text/bestGame2022.html)

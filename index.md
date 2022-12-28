@@ -5,6 +5,7 @@ title: トップページ
 
 ## Text
 
+* [なぜ「餅は餅屋」は餅屋なのか](text/mochi.html)
 * [個人的に怖くて嫌だった話](text/kowai.html)
 * [「弘法大師の涙雨」メモ](text/namidaame.html)
 * [2022年面白かったゲーム](text/bestGame2022.html)
@@ -13,8 +14,9 @@ title: トップページ
 
 ## Knowledge
 
-* [讃岐弁講座「はがい」](/knowledge/hagai.html)
-* [ギラファノコギリクワガタの名前の由来](/knowledge/ProsopocoilusGiraffa.html)
+* []()
+* [讃岐弁講座「はがい」](knowledge/hagai.html)
+* [ギラファノコギリクワガタの名前の由来](knowledge/ProsopocoilusGiraffa.html)
 
 ## About
 

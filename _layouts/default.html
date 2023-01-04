@@ -15,6 +15,13 @@
       <div class="container">
         <a href="/index.html">∇</a>
       </div>
+      <a
+      	id="js-share-twitter"
+      	class="share_button share_twitter"
+      	href=""
+      	target="_blank"
+      	rel="nofollow noopener noreferrer"
+      	>Twitter</a>
     </header>
 
     <div class="container">
@@ -26,3 +33,16 @@
     
   </body>
 </html>
+
+<script>
+  const share_url = location.href;
+  const share_hostpath = location.host + location.pathname;
+  const share_title = document.title;
+  
+  // twitter
+  const share_twitter = document.getElementById("js-share-twitter");
+  share_twitter.setAttribute(
+  	"href",
+  	"https://twitter.com/share?url=" + share_url + "&text=" + share_title
+  );
+</script>

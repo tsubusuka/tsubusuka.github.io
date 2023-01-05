@@ -17,10 +17,12 @@ title: tsubusukaのサイト
 * [金沢旅行(2022/12/9-12/11)](text/kanazawa.html)
 
 ## Knowledge
-
 * [なぜ「餅は餅屋」は餅屋なのか](knowledge/mochi.html)
 * [讃岐弁講座「はがい」](knowledge/hagai.html)
 * [ギラファノコギリクワガタの名前の由来](knowledge/ProsopocoilusGiraffa.html)
+
+## Log
+* [読書ログ](log/book.html)
 
 ## About
 

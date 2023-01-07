@@ -17,6 +17,7 @@ title: tsubusukaのサイト
 * [金沢旅行(2022/12/9-12/11)](text/kanazawa.html)
 
 ## Knowledge
+* [ミクロネーション](knowledge/micronation.html)
 * [使わなすぎてすぐに忘れてしまう単語](knowledge/forgetWords.html)
 * [なぜ「餅は餅屋」は餅屋なのか](knowledge/mochi.html)
 * [讃岐弁講座「はがい」](knowledge/hagai.html)

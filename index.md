@@ -26,6 +26,7 @@ title: tsubusukaのサイト
 ## Log
 * [読書ログ](log/book.html)
 * [映画ログ](log/movie.html)
+* [ゲームログ](log/game.html)
 
 
 ## About

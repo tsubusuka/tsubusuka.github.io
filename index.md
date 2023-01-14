@@ -6,6 +6,7 @@ title: tsubusukaのサイト
 ## Text
 
 ### 2023
+* [リアリティロンダリング](text/laundering.html)
 * [2023年始まった](text/2023start.html)
 
 ### 2022

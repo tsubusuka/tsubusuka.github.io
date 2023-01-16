@@ -30,9 +30,7 @@ title: tsubusukaのサイト
 * [映画ログ](log/movie.html)
 * [ゲームログ](log/game.html)
 
-
 ## About
-
 * [このサイトについて](/about.html)
 * [tsubusukaについて](/profile.html)
 

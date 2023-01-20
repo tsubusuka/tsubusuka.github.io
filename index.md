@@ -6,6 +6,7 @@ title: tsubusukaのサイト
 ## Text
 
 ### 2023
+* [折りたたむ](text/folding.html)
 * [手帳を買った](text/pocketBook.html)
 * [リアリティロンダリング](text/laundering.html)
 * [2023年始まった](text/2023start.html)

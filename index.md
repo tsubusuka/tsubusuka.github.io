@@ -23,6 +23,7 @@ title: tsubusukaのサイト
 
 ## Knowledge
 
+* [あまあそ](knowledge/omaaso.html)
 * [赤猫メモ](knowledge/akaneko.html)
 * [ミクロネーション](knowledge/micronation.html)
 * [使わなすぎてすぐに忘れてしまう単語](knowledge/forgetWords.html)

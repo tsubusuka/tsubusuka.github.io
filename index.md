@@ -35,4 +35,5 @@ title: tsubusukaのサイト
 ## About
 * [このサイトについて](/about.html)
 * [tsubusukaについて](/profile.html)
+* [CR部について](/crbu.html)
 

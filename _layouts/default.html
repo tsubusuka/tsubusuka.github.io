@@ -13,8 +13,11 @@
   <body>
 
     <header>
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@tsubusuka" />
+      <meta name="twitter:creator" content="@tsubusuka" />
       <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-      <meta property="og:type" content="summary" />
+      <meta property="og:type" content="article" />
       <meta property="og:title" content="{{ page.title }}" />
       <meta property="og:site_name" content="{{ site.title | default: site.github.repository_name }}" />
       {% if page.description %}

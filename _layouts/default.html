@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}" prefix="og: http://ogp.me/ns#"></html>
-<html>
+<html lang="{{ site.lang | default: "en-US" }}" prefix="og: http://ogp.me/ns#">
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -16,14 +15,14 @@
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content="@tsubusuka" />
       <meta name="twitter:creator" content="@tsubusuka" />
-      <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-      <meta property="og:type" content="article" />
-      <meta property="og:title" content="{{ page.title }}" />
-      <meta property="og:site_name" content="{{ site.title | default: site.github.repository_name }}" />
+      <meta name="og:url" content="{{ site.url }}{{ page.url }}" />
+      <meta name="og:type" content="article" />
+      <meta name="og:title" content="{{ page.title }}" />
+      <meta name="og:site_name" content="{{ site.title | default: site.github.repository_name }}" />
       {% if page.description %}
-       <meta property="og:description" content="{{ page.description }}" />
+       <meta name="og:description" content="{{ page.description }}" />
       {% else %}
-       <meta property="og:description" content="{{ site.description | default: site.github.project_tagline }}" />
+       <meta name="og:description" content="{{ site.description | default: site.github.project_tagline }}" />
       {% endif %}
       <div class="container">
         <a href="/index.html">🔝</a>

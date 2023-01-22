@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}" prefix="og: http://ogp.me/ns#"></html>
 <html>
   <head>
     <meta charset='utf-8'>
@@ -12,6 +13,15 @@
   <body>
 
     <header>
+      <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+      <meta property="og:type" content="article" />
+      <meta property="og:title" content="{{ page.title }}" />
+      <meta property="og:site_name" content="{{ site.title | default: site.github.repository_name }}" />
+      {% if page.description %}
+       <meta property="og:description" content="{{ page.description }}" />
+      {% else %}
+       <meta property="og:description" content="{{ site.description | default: site.github.project_tagline }}" />
+      {% endif %}
       <div class="container">
         <a href="/index.html">🔝</a>
         <a

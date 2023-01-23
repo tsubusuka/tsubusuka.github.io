@@ -6,6 +6,7 @@ title: tsubusukaのサイト
 ## Text
 
 ### 2023
+* [再封シール](text/saifu.html)
 * [折りたたむ](text/folding.html)
 * [手帳を買った](text/pocketBook.html)
 * [リアリティロンダリング](text/laundering.html)

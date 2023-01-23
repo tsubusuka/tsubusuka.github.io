@@ -13,6 +13,7 @@ title: tsubusukaのサイト
 * [2023年始まった](text/2023start.html)
 
 ### 2022
+
 * [2022年ベストアルバム](text/bestMusic2022.html)
 * [個人的に怖くて嫌だった話](text/kowai.html)
 * [「弘法大師の涙雨」メモ](text/namidaame.html)
@@ -21,6 +22,8 @@ title: tsubusukaのサイト
 * [金沢旅行(2022/12/9-12/11)](text/kanazawa.html)
 
 ## Knowledge
+
+* [おまあそ](knowledge/omaaso.html)
 * [赤猫メモ](knowledge/akaneko.html)
 * [ミクロネーション](knowledge/micronation.html)
 * [使わなすぎてすぐに忘れてしまう単語](knowledge/forgetWords.html)
@@ -29,11 +32,13 @@ title: tsubusukaのサイト
 * [ギラファノコギリクワガタの名前の由来](knowledge/ProsopocoilusGiraffa.html)
 
 ## Log
+
 * [読書ログ](log/book.html)
 * [映画ログ](log/movie.html)
 * [ゲームログ](log/game.html)
 
 ## About
+
 * [このサイトについて](/about.html)
 * [tsubusukaについて](/profile.html)
 * [CR部について](/crbu.html)

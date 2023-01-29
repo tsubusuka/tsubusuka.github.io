@@ -23,6 +23,7 @@ title: tsubusukaのサイト
 
 ## Knowledge
 
+* [良いなと思った言葉](knowledge/goodWord.html)
 * [おまあそ](knowledge/omaaso.html)
 * [赤猫メモ](knowledge/akaneko.html)
 * [ミクロネーション](knowledge/micronation.html)

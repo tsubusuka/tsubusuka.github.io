@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>書籍検索</title>
+  </head>
+  <body>
+    <h1>書籍検索</h1>
+    <input type="text" id="isbnInput" placeholder="Enter ISBN">
+    <button id="submitBtn">Submit</button>
+    <br><br>
+    <div id="bookInfo">
+      <p><strong>Title: </strong><span id="title"></span></p>
+      <p><strong>Author: </strong><span id="author"></span></p>
+      <p><strong>Published Date: </strong><span id="publishedDate"></span></p>
+      <p><strong>Description: </strong><span id="description"></span></p>
+    </div>
+    <div id="sample">
+        <h2>サンプルISBN</h2>
+        <p>ISBN: 9780679745203</p>
+        <p>ISBN: 9780140449198</p>
+        <p>AIによると、前者は『ライ麦畑でつかまえて』がでてくるはずが、『イギリス人の患者』が出る。</p>
+        <p>後者もホメロスの『オデュッセイア』が出てくると予想していたが、『ギルガメッシュ叙事詩』が出る。</p>
+
+    </div>
+
+    <script>
+      document.querySelector("#submitBtn").addEventListener("click", getBookInfo);
+
+      async function getBookInfo() {
+        const isbn = document.querySelector("#isbnInput").value;
+        const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=isbn:${isbn}`);
+        const data = await response.json();
+
+        if (data.totalItems === 0) {
+          alert("No book found with the provided ISBN");
+          return;
+        }
+
+        const book = data.items[0].volumeInfo;
+        document.querySelector("#title").innerText = book.title;
+        document.querySelector("#author").innerText = book.authors;
+        document.querySelector("#publishedDate").innerText = book.publishedDate;
+        document.querySelector("#description").innerText = book.description;
+      }
+    </script>
+  </body>
+</html>

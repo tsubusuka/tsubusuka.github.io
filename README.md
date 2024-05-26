@@ -1,0 +1,2 @@
+# tsubusuka.github.io
+diary

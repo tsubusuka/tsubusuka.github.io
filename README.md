@@ -1,2 +1,6 @@
+
 # tsubusuka.github.io
-diary
+
+## ここはなに
+
+- 日記などをかいていきます

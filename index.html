@@ -7,12 +7,19 @@
 </head>
 <body>
     <h2>tsubusukaの日記</h2>
-    <p>日付を入力して「表示」を押すことで日記が表示されます</p>
-    <form id="dateForm">
-        <input type="date" id="dateInput" required>
+    <p>YYYY/MM/DDを入力して「表示」を押すことで日記が表示されます</p>
+    <form id="commandForm">
+        <input type="text" id="commandInput" required>
         <button type="submit">表示</button>
     </form>
     <p id="message"></p>
+
+    <ul>
+        <li>2024/05/26～Todayの日付を入力してください</li>
+        <li>以下、特殊コマンド<ul></li>
+            <li>about</li>
+        </ul>
+    </ul>
 
     <script src="script.js"></script>
 </body>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2024-06-15.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="20240615">2024/06/15</h1>
+<p>土曜日。本屋に行って『このホラーがすごい！』を購入し、ドーナツ屋で読む。ホラーがここ近年流行っていて、ホラー好きとしては嬉しい限りである。とはいえ、ミーハーなので、紹介されている作品とか、ランキングに載っている作品も数えるほどしか読んでいなかった。まぁそのおかげでいろいろ知れて楽しいのだけれど。特に過去の名作コーナーみたいなのも載っていて、読んでみようと思った。ホラー作家たちによる寄稿文も載っていたが、平山夢明が特に恐ろしくふざけていて面白かった。<br>
+　持ってきていた『遠野物語　全訳注』も少し読む。有名な座敷わらしのあたりはモキュメンタリーホラーっぽくて面白い(実際には実話怪談なのだろうが)。<br>
+　座敷わらしの話について、山口孫左衛門家の衰退までの話が4つに分かれて語られる。</p>
+<blockquote>
+<p>一八　ザシキワラシまた女の児なることあり。同じ山口なる旧家にて山口孫左衛門という家には、童女の神二人いませりということを久しく言い伝えたりしが、或る年同じ村の何某という男、町より帰るとて留場(とめば)の橋のほとりにて見馴みなれざる二人のよき娘に逢えり。物思わしき様子にて此方へ来きたる。お前たちはどこから来たと問えば、おら山口の孫左衛門がところからきたと答う。これから何処へ行くのかと聞けば、それの村の何某が家にと答う。その何某はやや離れたる村にて、今も立派に暮せる豪農なり。さては孫左衛門が世も末だなと思いしが、それより久しからずして、この家の主従二十幾人、茸(きのこ)の毒に中あたりて一日のうちに死に絶たえ、七歳の女の子一人を残せしが、その女もまた年老いて子なく、近きころ病やみて失せたり。<br>
+　ここでは、娘2人が山口家から離れていくのに合わせて毒死により衰退したという話。<br>
+一九　孫左衛門が家にては、或る日梨なしの木のめぐりに見馴みなれぬ茸(きのこ)のあまた生(は)えたるを、食わんか食うまじきかと男どもの評議してあるを聞きて、最後の代の孫左衛門、食わぬがよしと制したれども、下男の一人がいうには、いかなる茸にても水桶(みずおけ)の中に入れて苧殻(おがら)をもってよくかき廻まわしてのち食えば決して中(あた)ることなしとて、一同この言に従い家内ことごとくこれを食いたり。七歳の女の児(こ)はその日外に出(い)でて遊びに気を取られ、昼飯を食いに帰ることを忘れしために助かりたり。不意の主人の死去にて人々の動転してある間に、遠き近き親類の人々、或いは生前に貸(かし)ありといい、或いは約束ありと称して、家の貨財は味噌(みそ)の類(たぐい)までも取り去りしかば、この村草分(くさわけ)の長者なりしかども、一朝にして跡方(あとかた)もなくなりたり。
+　ここではきのこに当たって死ぬまでの話が。<br>
+二〇　この兇変の前にはいろいろの前兆ありき。男ども苅置(かりおき)たる秣(まぐさ)を出すとて三ツ歯の鍬(くわ)にて掻(か)きまわせしに、大なる蛇(へび)を見出(みいだ)したり。これも殺すなと主人が制せしをも聴かずして打ち殺したりしに、その跡より秣の下にいくらともなき蛇ありて、うごめき出でたるを、男ども面白半分にことごとくこれを殺したり。さて取り捨つべきところもなければ、屋敷の外(そと)に穴を掘りてこれを埋(う)め、蛇塚を作る。その蛇は簣(あじか)に何荷(なんが)ともなくありたりといえり。
+　ここでは、座敷わらしとは一見関係なさそうな「蛇」の話。<br>
+二一　右の孫左衛門は村には珍しき学者にて、常に京都より和漢の書を取り寄せて読み耽(ふ)けりたり。少し変人という方なりき。狐(きつね)と親しくなりて家を富ます術を得んと思い立ち、まず庭の中に稲荷(いなり)の祠(ほこら)を建(た)て、自身京に上(のぼ)りて正一位の神階を請(う)けて帰り、それよりは日々一枚の油揚(あぶらげ)を欠かすことなく、手ずから社頭に供(そな)えて拝をなせしに、のちには狐馴(な)れて近づけども遁(に)げず。手を延ばしてその首を抑(おさ)えなどしたりという。村にありし薬師の堂守(どうもり)は、わが仏様は何ものをも供(そな)えざれども、孫左衛門の神様よりは御利益(ごりやく)ありと、たびたび笑いごとにしたりとなり。<br>
+　ここでは更に狐の話が出てくる。ここまでが山口家衰退までの過程の話だが、なんだか一見要素が多いように思われるが、ちゃんと解説ページに説明が補完されていて面白い。こうした一見関係ない要素が一点に結ばれていく感じとか、視点を変えた不思議な話がいくつも語られているところとかに土俗モキュメンタリーホラーみを感じたのかも(本文は<a href="https://www.aozora.gr.jp/cards/001566/files/52504_49667.html#midashi1800">柳田国男 遠野物語</a>より)。<br>
+　夏も近くなって昼も夜も暑くて、外を出れば汗を隠し、寝てて起きても汗だくだ。ついに冷房もかけてしまった。</p>
+</blockquote>
+
+</body>
+</html>

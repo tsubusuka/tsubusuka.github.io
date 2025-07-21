@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2025-07-19.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="20250719-20-%E3%81%AB%E3%82%85%E3%81%86">2025/07/19-20 にゅう</h1>
+<h2 id="%E3%81%AB%E3%82%85%E3%81%86">にゅう</h2>
+<p>三連休だったので、旅行へ行こうということになった。海より山派なので山へ行こうということはすぐに決まったが、いろいろマップを見たりしていて気になる名前を見つけた。<br>
+<img src="/image/nyuu/map.PNG" alt="MAP"><br>
+　にゅう。面白い名前だったのでここに行くことに。なぜ「にゅう」なのかなんてことは行けばわかることだ。<br>
+　金曜日の夜に特急あずさに乗って新宿から茅野へ。駅近くのホテルで一泊するのだが、東口を降りたところにヤツガタケマートというローカルコンビニがあったので入ってみる。最近できたのか、けっこう綺麗なところだった。地元の人の作ったであろう雑貨も売っていて、クビナガリュウのハンコや埼玉や東京ではみないお菓子を買ったりした。<br>
+<img src="/image/nyuu/IMG_8169.JPG" alt="おしどりミルクケーキ"><br>
+　ホテルに着くともう温泉も閉まっており、部屋風呂に入ってすぐ寝ることに(自分はホテルの部屋風呂は結構好きなので全く構わないのだが)。<br>
+　7時ごろに起床。ホテルのビュッフェで朝ご飯を食べた。机の上のあじさいが綺麗。<br>
+<img src="/image/nyuu/IMG_8172.JPG" alt="バカの盛り付け">
+　昼はろくに食べられないだろうから、たくさん食べておいた。写真を見ると唐揚げとフライとししゃものゾーン、だいぶ適当に取っているなと思う。<br>
+　茅野駅から山への接続はバス「メルヘン街道」または「麦草峠線」が通っていて、にゅう方向に進むには麦草峠線で白駒の池バス停まで進み、そこからは徒歩となる。<br>
+　バス停に行くと登山客が多く、登山が目的でない自分たちはTシャツとカジュアルなパンツなので少し浮いているような気分だった。バスに乗り込む前に酔い止めのキャンディを口に入れたが、これがなかなか美味しいというか「舐めていられる」という感じで、もちろん山道でも酔いもせずあっという間に着いた。白駒の池を拠点に方方の山に分岐しているようで、一般車の駐車場もあったのだが、見た感じほとんど埋まっているようだった。さすが三連休とも思ったが、「にゅう」という名前に釣られて来た身としては驚きだった。上高地に人が集まるのは何度も行ったことがあるので知ってはいたが、他の山にも人はたくさんいるんだな。<br>
+<img src="/image/nyuu/IMG_8191.JPG" alt="キジバト"><br>
+<img src="/image/nyuu/IMG_8176.JPG" alt="にゅうの森へ"><br>
+　「苔と原生林」と謳われているように、森に一歩入れば一面に苔が広がっていて、面白い。<br>
+<img src="/image/nyuu/IMG_8195.JPG" alt="苔ときのこ"><br>
+　苔には詳しくないので種類も何も全然わからないが、苔にも種類がたくさんあるようで草のようにぼうぼうと生えているものや、一般的な苔にイメージのような遠目ではまり立体性のないテクスチャのような苔もある。一番見かけたのは看板にもなっていたカギカモジゴケという種類のようだ。マスコットのコケ丸がなんだかマヌケな顔をしていてかわいかったので、あとでマグネットを購入した。旅行の際に一つはマグネットを買うことが多い。冷蔵庫が賑わうので。<br>
+<img src="/image/nyuu/IMG_8196.JPG" alt="にゅうの森へ"><br>
+　進んでいくと白駒の池へ。山にある湖沼って一番好きかも。水の中でも湖(池、沼)→川→湿地→海くらいの順番で好きな気がするが、その中でも山とセットになっていると尚良い。池に近づくとイトトンボの仲間が大量に飛んでおり、澄んだ青色をしていて目を引く。遠くにはカルガモの親子が見えたり、キセキレイが鳴きながら飛んだりしていた。<br>
+<img src="/image/nyuu/IMG_8206.JPG" alt="にゅうの森へ"><br>
+　池の側にはコテージが建っていて、今回は泊まることはできなかったがこういうところで一泊するのも楽しいだろうなと思った。<br>
+　分岐点では目的の「にゅう」や「にぅ」の看板があり、ホントにあるんだ！と思いつつ、未だに何も情報がなく面白さも増していく。途中でカラ(小鳥たち)の混群に遭い、コガラやウグイス、エナガ、キバシリの幼鳥？にあったり、ウソの幼鳥？にばったり遭ったりした。冬鳥でも山にはいたりするんだなと思った。天気は快晴だったが、東京のような暑さは全然なく、風もあり涼しい。鳥たちにも過ごしやすい気候なんだと思った。<br>
+　池から更に進むと湿原にたどり着く。<br>
+<img src="/image/nyuu/IMG_8235.JPG" alt="湿原"><br>
+　湿原についたあたりから綺麗な鳥のさえずりが聞こえ始めていたが、その元を探してみるとルリビタキが木の上で歌っていた。ルリビタキのさえずりを聞いたのは多分初めてだったので嬉しい。この鳥も冬のイメージが強い。<br>
+<img src="/image/nyuu/IMG_8246.JPG" alt="森"><br>
+　その後も湿った道の上に丸太を敷いただけの道を歩ていくなか、あと少しで「にゅう」かもなぐらいのところで、コマドリの声が聞こえてきたのでこれは見つけないとと躍起になり、見つけることに成功。カメラで撮られているのも気にせずひたすらビームのような音を発していた(馬のような声というのはいまいち納得できないな)。<br>
+　バスの時間上、にゅうにたどり着くことはできなかったが、普段見られない鳥とか苔とか観察できて楽しかったので良かった。もう一拍する予定だったが、バスを盛大に乗り間違えてしまい、宿に向かうのが難しくなったので諦めて帰ることに。<br>
+　諏訪にしばらく時間があったのでリンゴジュースとか買って、軽食を食べて帰った。
+<img src="/image/nyuu/IMG_8320.JPG" alt="ふじ"><br>
+　山からの下り時に思ったより時間が余ったので食べたハンバーグは美味しかった。<br>
+<img src="/image/nyuu/IMG_8283.JPG" alt="ハンバーグ"><br>
+　ワッフル<br>
+<img src="/image/nyuu/IMG_8317.JPG" alt="わっふる"><br>
+　ちなみに、写真を撮るのを忘れたが、「にゅう」は途中にあった看板では「乳（にゅう）」と書かれていて「乳」なんだと思った。ネットで調べると以下のような語源らしい。</p>
+<blockquote>
+<p>にゅうは八ヶ岳連峰にある山で、主稜線から中山峠で北東に延びる岩峰の山。山名は、刈り取り後の稲を円柱形や円錐形に積み上げる稲わらの「にう」が語源とされる。(https://www.yamakei-online.com/yamanavi/yama.php?yama_id=20562)</p>
+</blockquote>
+<p>「にう」という言葉も「稲積（にお）」が訛っているとか。</p>
+
+</body>
+</html>

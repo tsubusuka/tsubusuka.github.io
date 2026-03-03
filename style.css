@@ -207,6 +207,15 @@ a:hover {
   text-decoration: underline;
 }
 
+.article blockquote {
+  margin: 16px 0;
+  padding: 12px 20px;
+  border-left: 4px solid rgba(16, 42, 67, 0.3);
+  background: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+  color: #334e68;
+}
+
 .article img {
   max-width: 80%;
   height: auto;

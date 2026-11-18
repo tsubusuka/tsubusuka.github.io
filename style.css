@@ -180,6 +180,68 @@ a:hover {
   padding: 20px 0 36px;
 }
 
+/* archive: 俯瞰の鯨ドット絵 */
+.whale-wrap {
+  overflow-x: auto;
+  margin-top: 8px;
+}
+
+.whale {
+  --cell: clamp(9px, 2.85vw, 18px);
+  display: grid;
+  grid-template-columns: repeat(27, var(--cell));
+  gap: 1px;
+  width: max-content;
+  margin: 20px auto 10px;
+  line-height: 1;
+}
+
+.whale-cell {
+  width: var(--cell);
+  height: var(--cell);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Yu Gothic", "Meiryo", "Hiragino Maru Gothic ProN", sans-serif;
+  font-size: calc(var(--cell) * 0.92);
+  line-height: 1;
+  color: #1d6394;
+  text-decoration: none;
+}
+
+.whale-cell.is-post {
+  color: #0b1f33;
+  cursor: pointer;
+}
+
+.whale-cell.is-post:hover,
+.whale-cell.is-post:focus-visible {
+  color: #ffffff;
+  background: #0b1f33;
+  text-decoration: none;
+  outline: none;
+}
+
+.whale-caption {
+  margin: 4px 0 0;
+  text-align: center;
+  min-height: 1.5em;
+  font-size: 0.92rem;
+  color: #102a43;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .article {
   background: transparent; /* 背景を全体と揃える */
   border-radius: 12px;

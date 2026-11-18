@@ -15,30 +15,284 @@
     <div class="container">
       <h1>archive</h1>
 
-      <ul class="post-list">
-        <li class="post-card">
-          <!-- 記事のリンク -->
-          <a href="2026-01-25-start.html">
-            <span class="post-meta">2026-01-25</span>
-            <span class="post-title">ブログ開設</span>
-          </a>
-        </li>
-        <li class="post-card">
-          <a href="2026-01-25-the-whale.html">
-            <span class="post-meta">2026-01-25</span>
-            <span class="post-title">『ザ・ホエール』ダーレン・アロノフスキー</span>
-          </a>
-        </li>
-        <!-- 練習用記事 -->
-        <!-- <li class="post-card">
-          <a href="2026-01-01-hello.html">
-            <span class="post-meta">2026-01-01</span>
-            <span class="post-title">遊び場</span>
-          </a>
-        </li> -->
-      </ul>
+      <!--
+        上から見た鯨。上が頭、下が尾びれ。
+        新しい記事は、頭から尾へ・左から右の順で、次の span.whale-cell を a.whale-cell.is-post に差し替える。
+      -->
+      <div class="whale-wrap">
+        <div class="whale" role="list" aria-label="記事一覧">
+        <a class="whale-cell is-post" role="listitem" style="grid-column: 12; grid-row: 1" href="2026-01-25-start.html" data-title="2026-01-25 ブログ開設">
+          <span aria-hidden="true">■</span><span class="visually-hidden">2026-01-25 ブログ開設</span>
+        </a>
+        <a class="whale-cell is-post" role="listitem" style="grid-column: 13; grid-row: 1" href="2026-01-25-the-whale.html" data-title="2026-01-25 『ザ・ホエール』ダーレン・アロノフスキー">
+          <span aria-hidden="true">■</span><span class="visually-hidden">2026-01-25 『ザ・ホエール』ダーレン・アロノフスキー</span>
+        </a>
+        <span class="whale-cell" style="grid-column: 14; grid-row: 1" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 15; grid-row: 1" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 16; grid-row: 1" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 10; grid-row: 2" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 11; grid-row: 2" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 12; grid-row: 2" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 13; grid-row: 2" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 14; grid-row: 2" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 15; grid-row: 2" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 16; grid-row: 2" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 17; grid-row: 2" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 18; grid-row: 2" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 9; grid-row: 3" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 10; grid-row: 3" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 11; grid-row: 3" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 12; grid-row: 3" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 13; grid-row: 3" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 14; grid-row: 3" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 15; grid-row: 3" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 16; grid-row: 3" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 17; grid-row: 3" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 18; grid-row: 3" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 19; grid-row: 3" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 8; grid-row: 4" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 9; grid-row: 4" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 10; grid-row: 4" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 11; grid-row: 4" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 12; grid-row: 4" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 13; grid-row: 4" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 14; grid-row: 4" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 15; grid-row: 4" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 16; grid-row: 4" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 17; grid-row: 4" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 18; grid-row: 4" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 19; grid-row: 4" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 20; grid-row: 4" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 8; grid-row: 5" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 9; grid-row: 5" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 10; grid-row: 5" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 11; grid-row: 5" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 12; grid-row: 5" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 13; grid-row: 5" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 14; grid-row: 5" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 15; grid-row: 5" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 16; grid-row: 5" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 17; grid-row: 5" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 18; grid-row: 5" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 19; grid-row: 5" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 20; grid-row: 5" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 7; grid-row: 6" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 8; grid-row: 6" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 9; grid-row: 6" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 10; grid-row: 6" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 11; grid-row: 6" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 12; grid-row: 6" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 13; grid-row: 6" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 14; grid-row: 6" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 15; grid-row: 6" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 16; grid-row: 6" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 17; grid-row: 6" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 18; grid-row: 6" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 19; grid-row: 6" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 20; grid-row: 6" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 21; grid-row: 6" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 7; grid-row: 7" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 8; grid-row: 7" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 9; grid-row: 7" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 10; grid-row: 7" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 11; grid-row: 7" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 12; grid-row: 7" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 13; grid-row: 7" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 14; grid-row: 7" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 15; grid-row: 7" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 16; grid-row: 7" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 17; grid-row: 7" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 18; grid-row: 7" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 19; grid-row: 7" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 20; grid-row: 7" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 21; grid-row: 7" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 6; grid-row: 8" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 7; grid-row: 8" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 8; grid-row: 8" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 9; grid-row: 8" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 10; grid-row: 8" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 11; grid-row: 8" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 12; grid-row: 8" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 13; grid-row: 8" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 14; grid-row: 8" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 15; grid-row: 8" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 16; grid-row: 8" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 17; grid-row: 8" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 18; grid-row: 8" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 19; grid-row: 8" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 20; grid-row: 8" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 21; grid-row: 8" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 22; grid-row: 8" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 3; grid-row: 9" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 4; grid-row: 9" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 5; grid-row: 9" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 7; grid-row: 9" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 8; grid-row: 9" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 9; grid-row: 9" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 10; grid-row: 9" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 11; grid-row: 9" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 12; grid-row: 9" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 13; grid-row: 9" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 14; grid-row: 9" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 15; grid-row: 9" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 16; grid-row: 9" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 17; grid-row: 9" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 18; grid-row: 9" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 19; grid-row: 9" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 20; grid-row: 9" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 21; grid-row: 9" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 23; grid-row: 9" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 24; grid-row: 9" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 25; grid-row: 9" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 2; grid-row: 10" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 3; grid-row: 10" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 4; grid-row: 10" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 5; grid-row: 10" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 8; grid-row: 10" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 9; grid-row: 10" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 10; grid-row: 10" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 11; grid-row: 10" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 12; grid-row: 10" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 13; grid-row: 10" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 14; grid-row: 10" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 15; grid-row: 10" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 16; grid-row: 10" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 17; grid-row: 10" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 18; grid-row: 10" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 19; grid-row: 10" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 20; grid-row: 10" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 23; grid-row: 10" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 24; grid-row: 10" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 25; grid-row: 10" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 26; grid-row: 10" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 1; grid-row: 11" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 2; grid-row: 11" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 3; grid-row: 11" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 4; grid-row: 11" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 5; grid-row: 11" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 9; grid-row: 11" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 10; grid-row: 11" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 11; grid-row: 11" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 12; grid-row: 11" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 13; grid-row: 11" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 14; grid-row: 11" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 15; grid-row: 11" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 16; grid-row: 11" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 17; grid-row: 11" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 18; grid-row: 11" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 19; grid-row: 11" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 23; grid-row: 11" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 24; grid-row: 11" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 25; grid-row: 11" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 26; grid-row: 11" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 27; grid-row: 11" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 2; grid-row: 12" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 3; grid-row: 12" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 4; grid-row: 12" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 10; grid-row: 12" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 11; grid-row: 12" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 12; grid-row: 12" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 13; grid-row: 12" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 14; grid-row: 12" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 15; grid-row: 12" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 16; grid-row: 12" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 17; grid-row: 12" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 18; grid-row: 12" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 24; grid-row: 12" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 25; grid-row: 12" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 26; grid-row: 12" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 11; grid-row: 13" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 12; grid-row: 13" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 13; grid-row: 13" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 14; grid-row: 13" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 15; grid-row: 13" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 16; grid-row: 13" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 17; grid-row: 13" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 12; grid-row: 14" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 13; grid-row: 14" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 14; grid-row: 14" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 15; grid-row: 14" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 16; grid-row: 14" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 13; grid-row: 15" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 14; grid-row: 15" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 15; grid-row: 15" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 13; grid-row: 16" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 14; grid-row: 16" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 15; grid-row: 16" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 12; grid-row: 17" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 13; grid-row: 17" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 14; grid-row: 17" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 15; grid-row: 17" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 16; grid-row: 17" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 11; grid-row: 18" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 12; grid-row: 18" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 13; grid-row: 18" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 14; grid-row: 18" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 15; grid-row: 18" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 16; grid-row: 18" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 17; grid-row: 18" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 10; grid-row: 19" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 11; grid-row: 19" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 12; grid-row: 19" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 13; grid-row: 19" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 14; grid-row: 19" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 15; grid-row: 19" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 16; grid-row: 19" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 17; grid-row: 19" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 18; grid-row: 19" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 9; grid-row: 20" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 10; grid-row: 20" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 18; grid-row: 20" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 19; grid-row: 20" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 8; grid-row: 21" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 9; grid-row: 21" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 10; grid-row: 21" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 18; grid-row: 21" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 19; grid-row: 21" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 20; grid-row: 21" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 7; grid-row: 22" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 8; grid-row: 22" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 9; grid-row: 22" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 10; grid-row: 22" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 18; grid-row: 22" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 19; grid-row: 22" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 20; grid-row: 22" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 21; grid-row: 22" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 6; grid-row: 23" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 7; grid-row: 23" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 8; grid-row: 23" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 9; grid-row: 23" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 10; grid-row: 23" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 18; grid-row: 23" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 19; grid-row: 23" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 20; grid-row: 23" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 21; grid-row: 23" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 22; grid-row: 23" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 5; grid-row: 24" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 6; grid-row: 24" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 7; grid-row: 24" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 21; grid-row: 24" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 22; grid-row: 24" aria-hidden="true">■</span>
+        <span class="whale-cell" style="grid-column: 23; grid-row: 24" aria-hidden="true">■</span>
+        </div>
+      </div>
+      <p class="whale-caption" id="whale-caption">濃い■が記事です</p>
     </div>
   </main>
 
+  <script>
+    (function () {
+      var caption = document.getElementById("whale-caption");
+      var idle = "濃い■が記事です";
+      document.querySelectorAll(".whale-cell.is-post").forEach(function (link) {
+        function show() { caption.textContent = link.getAttribute("data-title"); }
+        function hide() { caption.textContent = idle; }
+        link.addEventListener("mouseenter", show);
+        link.addEventListener("mouseleave", hide);
+        link.addEventListener("focus", show);
+        link.addEventListener("blur", hide);
+      });
+    })();
+  </script>
 </body>
 </html>

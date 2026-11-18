@@ -35,6 +35,7 @@
     // 現在のページに応じたアクティブ状態を判定
     const currentPath = window.location.pathname;
     const isarchive = currentPath.includes('/archive/');
+    const isnote = currentPath.includes('/note/');
     const isabout = currentPath.includes('/about/');
     
     return `
@@ -43,6 +44,7 @@
           <h1 class="site-title"><a href="${basePath}index.html">卓上鯨観測所</a></h1>
           <nav class="site-nav" aria-label="メインメニュー">
             <a href="${basePath}archive/">archive</a>
+            <a href="${basePath}note/">note</a>
             <a href="${basePath}about/">about</a>
           </nav>
         </div>

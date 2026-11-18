@@ -42,7 +42,6 @@
         <div class="container">
           <h1 class="site-title"><a href="${basePath}index.html">卓上鯨観測所</a></h1>
           <nav class="site-nav" aria-label="メインメニュー">
-            <a href="${basePath}index.html">Top</a>
             <a href="${basePath}archive/">archive</a>
             <a href="${basePath}about/">about</a>
           </nav>

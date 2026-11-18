@@ -302,14 +302,13 @@
 
         </div>
       </div>
-      <p class="whale-caption" id="whale-caption">濃い■が記事です</p>
     </div>
   </main>
 
   <script>
     (function () {
       var caption = document.getElementById("whale-caption");
-      var idle = "濃い■が記事です";
+      var idle = "";
       document.querySelectorAll(".whale-cell.is-post").forEach(function (link) {
         function show() { caption.textContent = link.getAttribute("data-title"); }
         function hide() { caption.textContent = idle; }

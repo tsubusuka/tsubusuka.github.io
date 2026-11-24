@@ -1,0 +1,26 @@
+# GitHub Pages（Jekyll）の設定
+# note を Markdown で書けるようにするためのもの。
+# archive / about などの既存HTMLは先頭に「---」が無いので、今まで通りそのまま配信されます。
+
+title: 卓上鯨観測所
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: true   # スマホで書いた改行をそのまま改行として表示する
+
+collections:
+  notes:
+    output: true
+    permalink: /note/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: note
+
+exclude:
+  - README.md
+  - bk/

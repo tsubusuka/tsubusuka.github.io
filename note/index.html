@@ -1,3 +1,6 @@
+---
+# このページは _notes/ フォルダの .md を新しい順に自動で並べます（手で編集する必要はありません）
+---
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -17,6 +20,19 @@
       <article class="article">
         <h1>note</h1>
         <p>備忘録</p>
+        {% assign notes = site.notes | sort: "date" | reverse %}
+        {% if notes.size > 0 %}
+        <ul class="post-list">
+          {% for note in notes %}
+          <li class="post-card">
+            <time class="post-meta" datetime="{{ note.date | date: '%Y-%m-%d' }}">{{ note.date | date: '%Y-%m-%d' }}</time>
+            <a class="post-title" href="{{ note.url }}">{{ note.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% else %}
+        <p>まだありません。</p>
+        {% endif %}
       </article>
     </div>
   </main>

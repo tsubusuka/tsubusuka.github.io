@@ -325,3 +325,20 @@ a:hover {
   height: 100%;
 }
 
+
+/* note: Markdownで書いたnoteの一覧・本文 */
+.article .post-list time {
+  display: inline;
+  margin-bottom: 0;
+}
+
+.article code {
+  padding: 0 0.3em;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+}
+
+.note-back {
+  margin-top: 32px;
+  font-size: 0.9rem;
+}
